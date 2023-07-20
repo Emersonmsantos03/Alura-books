@@ -1,0 +1,36 @@
+.header__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header{
+    background-color: var(--branco-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+display: flex;
+align-items: center;
+}
+
+.container__image{
+    padding: 1rem;
+
+}
+
+.menu-list{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__button:checked~.menu-list{
+    display:block
+}
